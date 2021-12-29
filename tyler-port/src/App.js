@@ -1,29 +1,32 @@
 //react dependencies, importing different pages
-import React, { useState } from 'react';
-import ContactMe from './Components/Contact';
-import Nav from './Components/Nav';
-import About from './Components/About';
-import Project from './Components/Projects';
-
+import React, { useState } from "react";
+import ContactMe from "./Components/Contact";
+import Nav from "./Components/Nav";
+import About from "./Components/About";
+import Project from "./Components/Projects";
+import Footer from "./Components/Footer";
 
 function App() {
   //Set up SPA type state pages to display one page at a time
-  const [currentPage, pageChanger] = useState('Home')
-  
+  const [currentPage, pageChanger] = useState("Home");
+
   const selectPage = () => {
     switch (currentPage) {
-      case 'About':
+      case "About":
         return <About />;
-      case 'Project':
+      case "Project":
         return <Project />;
-      case 'ContactMe':
+      case "ContactMe":
         return <ContactMe />;
     }
-  }
+  };
   return (
     <div>
       <Nav currentpage={currentPage} pageChanger={pageChanger} />
-    <div>{selectPage(currentPage)}</div>
+      <main>
+        <div>{selectPage(currentPage)}</div>
+      </main>
+      <Footer />
     </div>
   );
 }

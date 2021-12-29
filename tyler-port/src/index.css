@@ -46,3 +46,31 @@ code {
 span[role='img'] {
   cursor: default;
 }
+
+.port-foot {
+  display:flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+    align-items: center;
+    background-color:black;
+}
+.port-foot h2 {
+  color: antiquewhite;
+  position:absolute;
+  margin-left: 500px;
+}
+.port-foot ul{
+  position:absolute;
+  margin-inline-start: 720px;
+  size: 50px;
+  text-decoration: none;
+}
+
+.port-foot ul li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+}
+
