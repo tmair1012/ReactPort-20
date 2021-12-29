@@ -1,11 +1,13 @@
 import React from "react";
 
 function Nav(props) {
-    const pages = ['Home', 'About', 'Projects', 'ContactMe']
+    const pages = ['Home', 'About', 'Projects', 'Contact']
   return (
+    <header className='port-head'>
+        <h2>Tyler Mair</h2>
     <ul className='nav-item'>
         {pages.map(pages => (
-            <li className='nav-item' key={pages}>
+            <li className='nav-item-list' key={pages}>
                 <a
                 href={'#' + pages.toLowerCase()}
                 onClick={() => props.pageChanger(pages)}
@@ -18,6 +20,7 @@ function Nav(props) {
             </li>
         ))}
     </ul>
+    </header>
   );
 }
 

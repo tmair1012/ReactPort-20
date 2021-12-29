@@ -16,7 +16,7 @@ function App() {
         return <About />;
       case "Project":
         return <Project />;
-      case "ContactMe":
+      case "Contact":
         return <ContactMe />;
     }
   };
