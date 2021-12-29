@@ -19,7 +19,7 @@ function ContactMe() {
     
     //markdown to show
     return(
-        <section>
+        <section id='contact'>
             <form id='contact-me-form'>
             <div>
                 <label htmlFor='name'>Your Name:</label>

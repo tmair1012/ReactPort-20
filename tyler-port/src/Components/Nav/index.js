@@ -1,20 +1,24 @@
-import React from 'react';
+import React from "react";
 
-function Nav () {
-    return(
-        <header className='flex-row px-1'>
-            <h2>
-                Tyler Mair
-            </h2>
-            <nav>
-                <ul className='flex-row'>
-                    <li className='mx-2'>
-                        
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    )
-};
+function Nav(props) {
+    const pages = ['Home', 'About', 'Projects', 'ContactMe']
+  return (
+    <ul className='nav-item'>
+        {pages.map(pages => (
+            <li className='nav-item' key={pages}>
+                <a
+                href={'#' + pages.toLowerCase()}
+                onClick={() => props.pageChanger(pages)}
+                className={
+                    props.currentPage === pages ? 'nav-link active' : 'nav-link'
+                }
+                >
+                    {pages}
+                </a>
+            </li>
+        ))}
+    </ul>
+  );
+}
 
 export default Nav;
