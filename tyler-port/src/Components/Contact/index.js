@@ -19,18 +19,18 @@ function ContactMe() {
     
     //markdown to show
     return(
-        <section id='contact'>
-            <form id='contact-me-form'>
+        <section className='contact'>
+            <form className='contact-me-form'>
             <div>
-                <label htmlFor='name'>Your Name:</label>
+                <label className='contact-text' htmlFor='name'>Your Name:</label>
                 <input type='text' name='name' defaultValue={name}  />
             </div>
             <div>
-                <label htmlFor='email'>Your Email:</label>
+                <label className='contact-text' htmlFor='email'>Your Email:</label>
                 <input type='email' name='email' defaultValue={email}  />
             </div>
             <div>
-                <label htmlFor="message">Say Something To Me</label>
+                <label className='contact-text' htmlFor="message">Say Something To Me</label>
                 <textarea name='message' rows='5' defaultValue={message}  />
             </div>
             <button name='button' type='submit'>Submit</button>
