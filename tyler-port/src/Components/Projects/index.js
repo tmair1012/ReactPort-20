@@ -16,9 +16,9 @@ function Project() {
             picture:''
         },
         {
-            title: 'Weather DashBoard',
-            description: 'Using a weather API, select a city to see the current temperature and 5 day forecast!',
-            url:'https://github.com/tmair1012/Challenge-06-Weather-Dashboard',
+            title: 'Find A Show! (WIP)',
+            description: 'Final Project! Use the search finder after logging in to find detailed descriptions and info about your favorite tv shows!',
+            url:'https://github.com/cclund444/P3FindAShow',
             picture:''
         },
         {
