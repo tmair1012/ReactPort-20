@@ -1,7 +1,7 @@
 import React from "react";
 
 function Nav(props) {
-    const pages = ['About', 'Project', 'Contact', 'Resume']
+    const pages = ['About', 'Projects', 'Contact', 'Resume']
   return (
     <header className='port-head'>
         <h2>Tyler Mair</h2>
