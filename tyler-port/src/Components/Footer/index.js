@@ -3,7 +3,6 @@ import React from "react";
 function Foot() {
   return (
     <footer className='port-foot'>
-        <h2>Check Me Out!</h2>
         <ul className='foot-ul'>
         <li>
       <a href="https://github.com/tmair1012" className='foot' >

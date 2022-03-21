@@ -58,14 +58,9 @@ code {
     align-items: center;
     background:none;
 }
-.port-foot h2 {
-  color: antiquewhite;
-  position:absolute;
-  margin-left: 1100px;
-}
 .port-foot ul{
   
-  margin-inline-start: 1300px;
+  margin-inline-start: 1450px;
   size: 50px;
   text-decoration: none;
   float:right;
@@ -101,23 +96,14 @@ code {
 }
 
 .aboutMe {
-  display:inline;
+  display:flex;
   position:relative;
   float:right;
   padding: 100px;
+  flex-direction: column;
 }
 
-.contact {
-  position:absolute;
-  padding: 100px;
-  margin-top: 100px;
-  margin-left: 500px;
-  background-color: black;
-}
 
-.contact-text{
-  color:antiquewhite;
-}
 
 .resume-title{
   text-align:center;
@@ -204,19 +190,14 @@ code {
 
 .education{
   display: flex;
-  width: 80%;
+  width: 100%;
   float:right;
 }
 
-.workExp {
-  width: 80%;
-  padding-bottom: 50px;
-  float: left;
-  display: flex
-}
+
 
 .personal {
-  width: 80%;
+  width: 100%;
   margin-bottom: 100px;
   display:flex;
   float: right;
@@ -234,8 +215,6 @@ code {
   
 }
 
-.technologies{
-}
 .tech-list{
   list-style-position: inside;
   list-style-type: square;
@@ -252,4 +231,107 @@ code {
   right:300px;
   font-size:30px;
   
+}
+
+.fab{
+  color:antiquewhite;
+  
+}
+
+.proj-title-section{
+  display:flex;
+  color:antiquewhite;
+  width:100%;
+  margin-bottom:200px;
+  
+}
+
+.proj-div{
+  padding:10px;
+  align-items: center;
+}
+.proj-section{
+  width:80%;
+}
+.proj-ul{
+  list-style:none;
+  text-align: left;
+  float:left;
+}
+
+.exp-photo{
+  float:right;
+  height:250px;
+  width:400px;
+  border-radius: 25px;
+  margin-left:50px;
+}
+
+.workExp {
+  padding-bottom: 50px;
+  text-align: left;
+  display:flex
+}
+.personal-photo{
+  height:250px;
+  border-radius: 25px;
+  margin-right:50px;
+}
+/* CONTACT SECTION */
+
+.contact {
+  padding: 100px;
+  margin-top: 100px;
+  margin-left: 500px;
+  background-color:none;
+  font-family: 'Noto Serif Display';
+  display:flex;
+}
+
+.contact-text{
+  color:antiquewhite;
+  display: flex;
+  
+}
+
+.name-div{
+  display:inline-block;
+  flex-direction: row;
+
+}
+.email-div{
+  display:inline-block;
+  flex-direction: row;
+  float: right;
+}
+
+.message-div{
+  margin-top:25px;
+}
+
+.contact-button{
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  border-radius: 8px;
+  font-family: 'Noto Serif Display';
+  color:black;
+  font-size:20px;
+  background-color:antiquewhite;
+}
+
+.message-box {
+  width:400px;
+  border-radius: 7px;
+}
+.name-box{
+  border-radius: 7px;
+  border:none;
+}
+.email-box{
+  border-radius: 7px;
+  border:none;
+}
+.info-list{
+  list-style: none;
 }

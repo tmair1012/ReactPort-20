@@ -21,20 +21,30 @@ function ContactMe() {
     return(
         <section className='contact'>
             <form className='contact-me-form'>
-            <div>
-                <label className='contact-text' htmlFor='name'>Your Name:</label>
-                <input type='text' name='name' defaultValue={name}  />
+            <div className='name-div'>
+                <label className='contact-text' htmlFor='name'>Name:</label>
+                <input className='name-box' type='text' name='name' defaultValue={name}  />
             </div>
-            <div>
-                <label className='contact-text' htmlFor='email'>Your Email:</label>
-                <input type='email' name='email' defaultValue={email}  />
+            <div className='email-div'>
+                <label className='contact-text' htmlFor='email'>Email:</label>
+                <input className='email-box' type='email' name='email' defaultValue={email}  />
             </div>
-            <div>
+            <div className='message-div'>
                 <label className='contact-text' htmlFor="message">Say Something To Me</label>
-                <textarea name='message' rows='5' defaultValue={message}  />
+                <textarea className='message-box' name='message' rows='5' defaultValue={message}  />
             </div>
-            <button name='button' type='submit'>Submit</button>
+            <button className='contact-button' name='button' type='submit'>Submit</button>
             </form>
+            <div className='contact-info'>
+                <ul className='info-list'>
+                    <li>
+                        Phone: 630-740-9575
+                    </li>
+                    <li>
+                        Email: Tyleramair@gmail.com
+                    </li>
+                </ul>
+            </div>
         </section>
     );
 }

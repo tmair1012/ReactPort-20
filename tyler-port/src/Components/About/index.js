@@ -1,5 +1,5 @@
 import React from "react";
-import moxiePhoto from "../../assets/Profile/Moxie_placeholder.jpg";
+import moxiePhoto from "../../assets/Profile/Moxie-professional.jpeg";
 
 function About() {
   return (
@@ -27,7 +27,7 @@ function About() {
         </p>
       </div>
       <div className="workExp">
-        <img src={moxiePhoto} alt="moxie" className="port-photo" />
+        
         <p>
           The past three years of my life has been dedicated not only to my web
           development interests, but also to the younger audience. I have been
@@ -42,10 +42,11 @@ function About() {
           and I felt I was not finished yet and that I wanted to continue
           growing.
         </p>
+        <img src={moxiePhoto} alt="moxie" className="exp-photo" />
       </div>
 
       <div className="personal">
-        <img src={moxiePhoto} alt="moxie" className="port-photo" />
+        <img src={moxiePhoto} alt="moxie" className="personal-photo" />
         <p>
           I am 28 years old living in Mesa, Arizona with my amazing girlfriend
           and my wonderful rescue dog, Moxie.
