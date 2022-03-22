@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/ReactPort-20/static/css/main.66644032.css",
-    "main.js": "/ReactPort-20/static/js/main.db396141.js",
-    "static/media/Moxie_placeholder.jpg": "/ReactPort-20/static/media/Moxie_placeholder.cf973c7a3584d62625ee.jpg",
+    "main.css": "/ReactPort-20/static/css/main.add02ccc.css",
+    "main.js": "/ReactPort-20/static/js/main.6fc2f248.js",
+    "static/media/frontPagePic.jpg": "/ReactPort-20/static/media/frontPagePic.2d765e63e536f09a86c3.jpg",
+    "static/media/Moxie-professional.jpeg": "/ReactPort-20/static/media/Moxie-professional.c1c7c51e9a05b42595cb.jpeg",
+    "static/media/socialMePic.jpeg": "/ReactPort-20/static/media/socialMePic.95b65a3067a932c094f7.jpeg",
     "static/media/trees-med.jpeg": "/ReactPort-20/static/media/trees-med.0aaac99a66f19ca04ee2.jpeg",
+    "static/media/jobPic.jpeg": "/ReactPort-20/static/media/jobPic.e66ece7475d7318e7542.jpeg",
+    "static/media/Tyler Mair Resume.pdf": "/ReactPort-20/static/media/Tyler Mair Resume.288817dd9e27c15406c6.pdf",
     "index.html": "/ReactPort-20/index.html",
-    "main.66644032.css.map": "/ReactPort-20/static/css/main.66644032.css.map",
-    "main.db396141.js.map": "/ReactPort-20/static/js/main.db396141.js.map"
+    "main.add02ccc.css.map": "/ReactPort-20/static/css/main.add02ccc.css.map",
+    "main.6fc2f248.js.map": "/ReactPort-20/static/js/main.6fc2f248.js.map"
   },
   "entrypoints": [
-    "static/css/main.66644032.css",
-    "static/js/main.db396141.js"
+    "static/css/main.add02ccc.css",
+    "static/js/main.6fc2f248.js"
   ]
 }
