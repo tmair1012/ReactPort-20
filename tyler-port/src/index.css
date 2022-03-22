@@ -86,14 +86,13 @@ code {
   flex-grow: 2;
 }
 
-.port-photo {
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
+.foot {
+  text-decoration: none;
+  color: antiquewhite;
   display: inline;
-  position:relative;
-  float:left;
 }
+
+
 
 .aboutMe {
   display:flex;
@@ -130,7 +129,7 @@ code {
   display:flex;
 }
 
-#mePhoto {
+.mePhoto {
   display: flex;
   float: right;
   border-radius: 50%;
@@ -259,6 +258,13 @@ code {
   float:left;
 }
 
+.port-photo {
+  border-radius: 25%;
+  height: 250px;
+  width: 400px;
+  margin-right:40px
+}
+
 .exp-photo{
   float:right;
   height:250px;
@@ -281,7 +287,7 @@ code {
 
 .contact {
   padding: 100px;
-  margin-top: 100px;
+  margin-top: 40px;
   margin-left: 500px;
   background-color:none;
   font-family: 'Noto Serif Display';
@@ -327,11 +333,33 @@ code {
 .name-box{
   border-radius: 7px;
   border:none;
+  width: 150px;
 }
 .email-box{
   border-radius: 7px;
   border:none;
+  width: 150px;
 }
 .info-list{
   list-style: none;
+}
+
+.resumeDiv {
+  color:antiquewhite;
+  font-family: 'Noto Serif Display';
+  display:flex;
+  flex-direction: column;
+}
+
+.whyMe{
+  width:70%;
+  text-align: center;
+  margin-left:270px;
+}
+
+.resumeDownload{
+  text-align: center;
+  text-decoration: none;
+  color:rgb(241, 213, 176);
+  margin-top:50px;
 }

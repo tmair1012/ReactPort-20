@@ -1,15 +1,18 @@
 import React from "react";
 import moxiePhoto from "../../assets/Profile/Moxie-professional.jpeg";
+import socialPhoto from"../../assets/Profile/socialMePic.jpeg";
+import jobPhoto from "../../assets/Profile/jobPic.jpeg";
+import headPic from "../../assets/Profile/frontPagePic.jpg";
 
 function About() {
   return (
     <div className="aboutMe">
       <div className="meTitle">
         <h1 id="about">
-          Hi Stranger, you definitely don't know me but here's all my personal
-          info, have at it.
+          Hi There. My name is Tyler Mair. A new Full-Stack Web Dev looking for
+          new opportunities.
         </h1>
-        <img src={moxiePhoto} alt="moxie" id="mePhoto" />
+        <img src={headPic} alt="moxie" className="mePhoto" />
         <div className="arrow"></div>
       </div>
       <div className="education">
@@ -42,11 +45,11 @@ function About() {
           and I felt I was not finished yet and that I wanted to continue
           growing.
         </p>
-        <img src={moxiePhoto} alt="moxie" className="exp-photo" />
+        <img src={jobPhoto} alt="moxie" className="exp-photo" />
       </div>
 
       <div className="personal">
-        <img src={moxiePhoto} alt="moxie" className="personal-photo" />
+        <img src={socialPhoto} alt="moxie" className="personal-photo" />
         <p>
           I am 28 years old living in Mesa, Arizona with my amazing girlfriend
           and my wonderful rescue dog, Moxie.

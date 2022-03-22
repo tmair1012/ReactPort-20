@@ -20,7 +20,7 @@ function ContactMe() {
     //markdown to show
     return(
         <section className='contact'>
-            <form className='contact-me-form'>
+            <form className='contact-me-form' action="https://formsubmit.co/tyleramair@gmail.com" method="POST">
             <div className='name-div'>
                 <label className='contact-text' htmlFor='name'>Name:</label>
                 <input className='name-box' type='text' name='name' defaultValue={name}  />
@@ -30,21 +30,11 @@ function ContactMe() {
                 <input className='email-box' type='email' name='email' defaultValue={email}  />
             </div>
             <div className='message-div'>
-                <label className='contact-text' htmlFor="message">Say Something To Me</label>
+                <label className='contact-text' htmlFor="message">Say Something To Me:</label>
                 <textarea className='message-box' name='message' rows='5' defaultValue={message}  />
             </div>
             <button className='contact-button' name='button' type='submit'>Submit</button>
             </form>
-            <div className='contact-info'>
-                <ul className='info-list'>
-                    <li>
-                        Phone: 630-740-9575
-                    </li>
-                    <li>
-                        Email: Tyleramair@gmail.com
-                    </li>
-                </ul>
-            </div>
         </section>
     );
 }
