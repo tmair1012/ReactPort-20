@@ -1,68 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from '../Modal';
 import moxiePhoto from "../../assets/Profile/Moxie-professional.jpeg";
-import socialPhoto from"../../assets/Profile/socialMePic.jpeg";
+import socialPhoto from "../../assets/Profile/socialMePic.jpeg";
 import jobPhoto from "../../assets/Profile/jobPic.jpeg";
 import headPic from "../../assets/Profile/frontPagePic.jpg";
 
 function About() {
+
+  const [show, setShow] = useState(false);
+
   return (
     <div className="aboutMe">
       <div className="meTitle">
-        <h1 id="about">
-          Hi There. My name is Tyler Mair. A new Full-Stack Web Dev looking for
-          new opportunities.
+        <h1 className="about">
+          {" "}
+          <p className="aboutP">Hi, i'm</p>Tyler Mair.{" "}
         </h1>
-        <img src={headPic} alt="moxie" className="mePhoto" />
-        <div className="arrow"></div>
-      </div>
-      <div className="education">
-        <img src={moxiePhoto} alt="moxie" className="port-photo" />
+        <p className="aboutP2">
+          Graduate of The University of Arizona Full-Stack Web-Development Program. <br></br> I love building user-friendly applications and challenging myself to learn<br></br>
+          new concepts.
+          <br></br>
+          <br></br>
+          I earned a Bachelors of Arts and Sciences from Illinois State University in 
+          <br></br>
+          2018 and I am currently working as a Vice Principal for at a private day school.
+          <br></br>
+          <br></br>
+          Including Web Development, my passions include but are not limited to:
+          </p>
+          <ul>
+            <li onClick={() => setShow(true)}>Video Games</li>
+            <li onClick={() => setShow(true)}>Rock/Punk/Alternative</li>
+            <li onClick={() => setShow(true)}>Animals</li>
 
-        <p>
-          My name is Tyler Mair, I am a recent graduate of the Full Stack Web
-          Development Bootcamp from the University of Arizona. This program was
-          an intense 6 month course where I learned and mastered a number of
-          different languages, and technologies in the Web Development world. I
-          also have a Bachelors of Arts and Sciences in Sociology from Illinois
-          State University which I earned back in 2018. I am a keen thinker and
-          problem solver, I also pride myself in being capable of leading and
-          collaborating with teams for the best possible results.
-        </p>
+          </ul>
+       
+        {/* <img src={headPic} alt="moxie" className="mePhoto" /> */}
       </div>
-      <div className="workExp">
-        
-        <p>
-          The past three years of my life has been dedicated not only to my web
-          development interests, but also to the younger audience. I have been
-          extremely humbled by my work as a Special Education Teacher. Working
-          with kids has been another passion of mine, and I am incredibly
-          fortunate to call myself a teacher.
-          <b></b> I quickly was promoted to a teacher leader (vice prinicple in
-          other words), and was asked if I would like to become a principal of
-          my own campus. While this was a great honor, I was mainly consumed in
-          exploring my biggest passion in life: Web Development. Becoming a
-          principle would have been my last station following that career path,
-          and I felt I was not finished yet and that I wanted to continue
-          growing.
-        </p>
-        <img src={jobPhoto} alt="moxie" className="exp-photo" />
-      </div>
+      <div className="education"></div>
 
-      <div className="personal">
-        <img src={socialPhoto} alt="moxie" className="personal-photo" />
-        <p>
-          I am 28 years old living in Mesa, Arizona with my amazing girlfriend
-          and my wonderful rescue dog, Moxie.
-          <b></b>I have major interest in videogames, working out (I say that
-          but nobody would be able to tell), music; especially alternative,
-          rock, indie, hiphop, my favorite band is Queens of the Stone Age.
-          <b></b>
-          If you have not already noticed my Instagram and Linkdn profiles can
-          be found below. Please check me out and critique me!
-        </p>
-      </div>
+      <div className="personal"></div>
       <div className="skills">
-        <h2 className='skillsTitle'>Skills</h2>
+        
+        <h2 className="skillsTitle">Skills</h2>
+        <div>
+        <button onClick={() => setShow(true) }> Show Modal</button>
+        <Modal show={show} />
+        </div>
         <div className="technologies">
           <ul className="tech-list">
             {" "}
@@ -84,8 +68,7 @@ function About() {
             <li>Progressive Web Applications</li>
           </ul>
         </div>
-        </div>
-      
+      </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ function Nav(props) {
     const pages = ['About', 'Projects', 'Contact', 'Resume']
   return (
     <header className='port-head'>
-        <h2>Tyler Mair</h2>
+        
     <ul className='nav-item'>
         {pages.map(pages => (
             <li className='nav-item-list' key={pages}>

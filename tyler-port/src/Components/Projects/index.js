@@ -63,7 +63,7 @@ function Project() {
         <i className="fab fa-github fa-1x"></i> </a>
 
         <a href={proj.deployUrl} className='foot'>
-        <i class="fas fa-laptop"></i> </a>
+        <i className="fas fa-laptop"></i> </a>
          <p>{proj.description}</p>
         </div>
             </li>
