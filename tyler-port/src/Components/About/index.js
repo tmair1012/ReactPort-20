@@ -6,8 +6,16 @@ import jobPhoto from "../../assets/Profile/jobPic.jpeg";
 import headPic from "../../assets/Profile/frontPagePic.jpg";
 
 function About() {
+  const videoGames = document.getElementsByClassName('.vidGames');
+  const [moxPic, setMox] = useState(false)
+  const [show, setShow] = useState(false, 0);
 
-  const [show, setShow] = useState(false);
+
+  
+  
+
+  let videoGameText = "Video Games"
+  
 
   return (
     <div className="aboutMe">
@@ -29,26 +37,28 @@ function About() {
           Including Web Development, my passions include but are not limited to:
           </p>
           <ul>
-            <li onClick={() => setShow(true)}>Video Games</li>
-            <li onClick={() => setShow(true)}>Rock/Punk/Alternative</li>
-            <li onClick={() => setShow(true)}>Animals</li>
-
+          <Modal show={show} moxPic={moxPic}/>
+            <li className='vidGames' onClick={() => setShow(true && 1)} value='Video Games'>{videoGameText}</li>
+            <li className='music' onClick={() => setShow(true && 2)}>Rock/Punk/Alternative</li>
+            <li onClick={() => setShow(true && 3)}>Animals</li>
           </ul>
        
         {/* <img src={headPic} alt="moxie" className="mePhoto" /> */}
       </div>
-      <div className="education"></div>
+      <div className="pictureMain">
+        <img className ='bigMe' src={socialPhoto}></img>
+      </div>
 
       <div className="personal"></div>
       <div className="skills">
         
-        <h2 className="skillsTitle">Skills</h2>
+        {/* <h2 className="skillsTitle">Skills</h2>
         <div>
         <button onClick={() => setShow(true) }> Show Modal</button>
-        <Modal show={show} />
+        
         </div>
-        <div className="technologies">
-          <ul className="tech-list">
+        {/* <div className="technologies"> */}
+          {/* <ul className="tech-list">
             {" "}
             <h3>Technologies</h3>
             <li>HTML5</li>
@@ -67,7 +77,7 @@ function About() {
             <li>React</li>
             <li>Progressive Web Applications</li>
           </ul>
-        </div>
+        </div> */} 
       </div>
     </div>
   );
