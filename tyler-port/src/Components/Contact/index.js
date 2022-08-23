@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import faceBookLogo from "../../assets//Profile//facebookLogo.jpg"
+import instagramLogo from "../../assets//Profile//instagramLogo.jpg"
 
 function ContactMe() {
 
@@ -21,6 +23,10 @@ function ContactMe() {
     return(
         <section className='contact'>
             <form className='contact-me-form' action="https://formsubmit.co/tyleramair@gmail.com" method="POST">
+            <div className='contact-label'>
+                <h1>Contact Me</h1>
+                <p>I love long walks on the , </p>
+            </div>
             <div className='name-div'>
                 <label className='contact-text' htmlFor='name'>Name:</label>
                 <input className='name-box' type='text' name='name' defaultValue={name}  />
@@ -35,6 +41,30 @@ function ContactMe() {
             </div>
             <button className='contact-button' name='button' type='submit'>Submit</button>
             </form>
+            <div className='contact-info'>
+                <p className='contact-info-title'>Email
+                </p>
+
+                <p className='contact-info-real'>
+                tyleramair@gmail.com
+                </p>
+
+                <p className='contact-info-title'>
+                Phone
+                </p>
+
+                <p  className='contact-info-real'>
+                630-740-9575
+                </p>
+
+                <p className='contact-info-title'>Address</p>
+
+                <p className='contact-info-real'>
+                711 N. Evergreen Road Mesa, AZ, 85201
+                </p>
+                <a href="https://www.facebook.com/tyler.mair.7"><img className='fb-logo' src={faceBookLogo}></img></a>
+                <a href="https://www.instagram.com/tyler.mair.7/"><img className='ig-logo' src={instagramLogo}></img></a>
+            </div>
         </section>
     );
 }
