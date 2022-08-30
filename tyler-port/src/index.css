@@ -174,6 +174,8 @@ width:30%;
 
 
 
+
+
 .fab{
   color:antiquewhite;
   
@@ -200,43 +202,20 @@ width:30%;
   float:left;
 }
 
-.port-photo {
-  border-radius: 25%;
-  height: 250px;
-  width: 400px;
-  margin-right:40px
-}
-
-.exp-photo{
-  float:right;
-  height:250px;
-  width:400px;
-  border-radius: 25px;
-  margin-left:50px;
-}
-
-.workExp {
-  padding-bottom: 50px;
-  text-align: left;
-  display:flex
-}
-.personal-photo{
-  height:250px;
-  border-radius: 25px;
-  margin-right:50px;
-}
 /* CONTACT SECTION */
 
 .contact {
-  background-color:rgba(70, 138, 155, 0.131);
+  background-color:rgba(70, 138, 155, 0.167);
   height:500px;
   margin-top: 40px;
   background-color:none;
   font-family: 'Noto Serif Display';
   display:flex;
   justify-content:left;
-  margin-left:300px;
-  margin-right:300px;
+  margin-left:350px;
+  margin-right:350px;
+  overflow:hidden;
+  border-radius:.2rem;
 }
 
 .contact-me-form{
@@ -246,9 +225,9 @@ width:30%;
 /* CONTACT INFO TAB */
 .contact-info{
   background-color: rgba(70, 138, 155, 0.131);
-  width:400px;
+  width:700px;
   margin-left:200px;
-  margin-right:100px;
+  margin-right:50px;
   font-size:15px;
   align-items:center;
   margin-top:10px;
@@ -256,7 +235,7 @@ width:30%;
 }
 
 .contact-info-title{
-  color:rgb(106, 226, 244);
+  color:rgba(6, 108, 124, 0.973);
   line-height:0px;
   margin-left:10px;
   margin-top:30px;
@@ -264,10 +243,29 @@ width:30%;
 .contact-info-real{
   margin-left:10px;
 }
-
+/*facebook logo */
+.fb-logo{
+  height:30px;
+  width:30px;
+  padding:4px;
+}
 .ig-logo{
-  width: 50px;
-  height: 50px;
+  margin-top:25px;
+  width: 30px;
+  height: 30px;
+  padding:4px;
+}
+
+.in-logo{
+  width: 35px;
+  height: 30px;
+  padding:4px;
+}
+
+.gh-logo{
+  height:30px;
+  width:30px;
+  padding:4px;
 }
 
 .contact-label{
@@ -276,20 +274,52 @@ width:30%;
   line-height:0px;
 }
 
-.contact-text{
-  color:antiquewhite;
-  display: flex;
-  font-size:14px;
-  
+.contact-label h1{
+  font-size: 25px;
 }
 
-.name-div{
+.contact-description{
+  font-size:15px;
+  line-height:20px;
 }
+
+
+.name-div{
+  display:inline-flex;
+  flex-direction:column;
+  width:50%;
+  float:left;
+  font-size:14px;
+  margin-top:20px;
+}
+
+.name-box{
+  border-radius: 3px;
+  border:none;
+  width: 195px;
+  height: 25px;
+}
+
 .email-div{
+  width:50%;
+  display:inline-flex;
+  flex-direction:column;
+  float:left;
+  font-size: 14px;;
+  margin-top:20px;
+}
+
+.email-box{
+  border-radius: 3px;
+  border:none;
+  width: 196px;
+  height: 25px;
 }
 
 .message-div{
-  margin-top:25px;
+  float:right;
+  font-size:14px;
+  margin-top:15px;
 }
 
 .contact-button{
@@ -300,7 +330,7 @@ width:30%;
   font-family: 'Noto Serif Display';
   color:black;
   font-size:20px;
-  background-color:antiquewhite;
+  background-color:rgba(51, 73, 219, 0.219);
   float:right;
 }
 
@@ -309,18 +339,7 @@ width:30%;
   border-radius: 3px;
   height:150px;
 }
-.name-box{
-  border-radius: 3px;
-  border:none;
-  width: 300px;
-  height: 25px;
-}
-.email-box{
-  border-radius: 3px;
-  border:none;
-  width: 300px;
-  height: 25px;
-}
+
 .info-list{
   list-style: none;
 }

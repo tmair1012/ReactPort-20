@@ -31,26 +31,20 @@ function About() {
           <br></br>
           I earned a Bachelors of Arts and Sciences from Illinois State University in 
           <br></br>
-          2018 and I am currently working as a Vice Principal for at a private day school.
+          2018 and I am currently working as a Vice Principal for at a private day school. I have always loved what I do!
           <br></br>
           <br></br>
-          Including Web Development, my passions include but are not limited to:
+          Until I was punched in the face 14 times by a 12 year old.
           </p>
-          <ul>
-          <Modal show={show} moxPic={moxPic}/>
-            <li className='vidGames' onClick={() => setShow(true && 1)} value='Video Games'>{videoGameText}</li>
-            <li className='music' onClick={() => setShow(true && 2)}>Rock/Punk/Alternative</li>
-            <li onClick={() => setShow(true && 3)}>Animals</li>
-          </ul>
        
         {/* <img src={headPic} alt="moxie" className="mePhoto" /> */}
       </div>
       <div className="pictureMain">
-        <img className ='bigMe' src={socialPhoto}></img>
+        <img className ='bigMe' src={moxiePhoto}></img>
       </div>
 
-      <div className="personal"></div>
-      <div className="skills">
+      
+      
         
         {/* <h2 className="skillsTitle">Skills</h2>
         <div>
@@ -78,7 +72,7 @@ function About() {
             <li>Progressive Web Applications</li>
           </ul>
         </div> */} 
-      </div>
+      
     </div>
   );
 }

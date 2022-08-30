@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import faceBookLogo from "../../assets//Profile//facebookLogo.jpg"
 import instagramLogo from "../../assets//Profile//instagramLogo.jpg"
+import linkedIn from "../../assets/Profile/linkedIn.jpg"
+import gitHubLogo from "../../assets/Profile/gitHubLogo.jpg"
 
 function ContactMe() {
 
@@ -25,18 +27,21 @@ function ContactMe() {
             <form className='contact-me-form' action="https://formsubmit.co/tyleramair@gmail.com" method="POST">
             <div className='contact-label'>
                 <h1>Contact Me</h1>
-                <p>I love long walks on the , </p>
+                <p className='contact-description'>We here at Tyler's Portfolio are available to answer any questions you may have.<br></br>
+                If I do not get back to you instantly through email, you can also try phone / text.<br></br>
+                I am looking forward to connecting! (Please connect)
+                </p>
             </div>
             <div className='name-div'>
-                <label className='contact-text' htmlFor='name'>Name:</label>
+                <label className='name-contact-text' htmlFor='name'>Name</label>
                 <input className='name-box' type='text' name='name' defaultValue={name}  />
             </div>
             <div className='email-div'>
-                <label className='contact-text' htmlFor='email'>Email:</label>
+                <label className='email-contact-text' htmlFor='email'>Email</label>
                 <input className='email-box' type='email' name='email' defaultValue={email}  />
             </div>
             <div className='message-div'>
-                <label className='contact-text' htmlFor="message">Say Something To Me:</label>
+                <label className='contact-text' htmlFor="message">Say Something To Me</label>
                 <textarea className='message-box' name='message' rows='5' defaultValue={message}  />
             </div>
             <button className='contact-button' name='button' type='submit'>Submit</button>
@@ -60,10 +65,12 @@ function ContactMe() {
                 <p className='contact-info-title'>Address</p>
 
                 <p className='contact-info-real'>
-                711 N. Evergreen Road Mesa, AZ, 85201
+                711 N. Evergreen Road,<br></br> Mesa, Arizona<br></br> 85201
                 </p>
-                <a href="https://www.facebook.com/tyler.mair.7"><img className='fb-logo' src={faceBookLogo}></img></a>
-                <a href="https://www.instagram.com/tyler.mair.7/"><img className='ig-logo' src={instagramLogo}></img></a>
+                <a href="https://github.com/tmair1012"><img className='gh-logo' src={gitHubLogo} alt='Github'></img></a>
+                <a href="https://www.facebook.com/tyler.mair.7"><img className='fb-logo' src={faceBookLogo} alt='Facebook'></img></a>
+                <a href="https://www.instagram.com/tyler.mair.7/"><img className='ig-logo' src={instagramLogo} alt='Instagram'></img></a>
+                <a href="https://www.linkedin.com/in/tyler-mair-986746165/"><img className='in-logo' src={linkedIn} alt='Linkedin'></img></a>
             </div>
         </section>
     );
