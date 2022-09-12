@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Nova Flat';font-size: 22px;
+  font-family: 'Noto Sans Display';font-size: 22px;
   display:flex;
   flex-direction: column;
   flex-grow:1;
@@ -116,9 +116,9 @@ width:30%;
 
 .proj-div {
   display:flex;
-  flex-direction:column;
   flex-grow:1;
   padding: 100px;
+  font:'Noto Serif Display';
 }
 
 .proj-section{
@@ -173,37 +173,82 @@ width:30%;
 }
 
 
-
-
-
 .fab{
   color:antiquewhite;
   
 }
 
-.proj-title-section{
+/* PROJECT SECTION */
+.projects{
+  overflow:hidden;
   display:flex;
-  color:antiquewhite;
-  width:100%;
-  margin-bottom:200px;
-  
+  flex-direction: row;
+  justify-content: center;
+  margin-top:100px;
+}
+.projects h2{
+  position:absolute;
+  top:100px;
+}
+/* tipsy image */
+.tipsy img{
+width:300px;
+height:300px;
+transition:.5s ease;
+position: relative;
+pointer-events: auto;
+border-radius: .5rem;
 }
 
-.proj-div{
+.tipsy{
   padding:10px;
-  align-items: center;
 }
-.proj-section{
-  width:80%;
+/*tipsy img hover */
+
+.tipsy img:hover{
+  opacity: 0.5;
+
 }
-.proj-ul{
-  list-style:none;
-  text-align: left;
-  float:left;
+
+.hey{
+  position:absolute;
+  opacity:1;
+  left:150px;
+  top:200px;
+  text-decoration: none;
+  color: antiquewhite;
+  display: inline;
 }
+
+.hey:hover{
+  opacity: .5;
+}
+
+.tipsy img:hover +.hey{
+  opacity:.5;
+  transition: 1s ease;
+}
+
+.hey:hover ~ .tipsy img {
+  opacity:.5;
+}
+
+.overLay{
+  background-color:rgba(0, 0, 0, 0.715);
+  width:300px;
+  height:300px;
+  position:absolute;
+  top:185.5px;
+  opacity: 0;
+  transition:.4s ease-in-out;
+  border-radius: .5rem;
+}
+.overLay:hover{
+opacity:.85;
+}
+
 
 /* CONTACT SECTION */
-
 .contact {
   background-color:rgba(70, 138, 155, 0.167);
   height:500px;
@@ -216,6 +261,7 @@ width:30%;
   margin-right:350px;
   overflow:hidden;
   border-radius:.2rem;
+  font-family:'Noto Sans Display';
 }
 
 .contact-me-form{
@@ -239,6 +285,7 @@ width:30%;
   line-height:0px;
   margin-left:10px;
   margin-top:30px;
+  font-weight:bold;
 }
 .contact-info-real{
   margin-left:10px;
@@ -362,16 +409,4 @@ width:30%;
   text-decoration: none;
   color:rgb(241, 213, 176);
   margin-top:50px;
-}
-
-.modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

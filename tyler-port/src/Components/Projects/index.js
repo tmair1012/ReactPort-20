@@ -1,5 +1,10 @@
 import React from 'react'
 
+/*import pictures*/
+import workDay from "../../assets/Profile/WorkDayScheduler.png";
+import tipsy from "../../assets/Profile/Letsgettipsypic.png";
+import rhythm from "../../assets/Profile/DailyRhythmPic.png";
+
 function Project() {
    
     const myProjects = [
@@ -8,15 +13,16 @@ function Project() {
             description: 'My first group project! A simple site using an API to choose a drink for you!',
             githubUrl:'https://github.com/gracielamorales/LetsGetTipsy',
             deployUrl:'https://gracielamorales.github.io/LetsGetTipsy/',
-            picture:''
+            picture:tipsy
         },
         {
             title: 'Daily Rhythm',
             description: 'My second group project! Using Twilio, get alerts from your phone to remind you of your life! (WIP)',
             githubUrl:'https://github.com/tmair1012/Daily_Rhythm',
             deployUrl:'https://daily-rhythm.herokuapp.com/',
-            picture:''
+            picture:rhythm
         },
+        /* Not working
         {
             title: 'Find A Show! (WIP)',
             description: 'Final Project! Use the search finder after logging in to find detailed descriptions and info about your favorite tv shows!',
@@ -24,13 +30,15 @@ function Project() {
             deployUrl:'https://powerful-shore-59524.herokuapp.com/',
             picture:''
         },
+        */
         {
             title: 'Work Day Scheduler',
             description: 'Schedule tasks on a workday scheduler! Color coordinated to show what is up and coming and what is past!',
             githubUrl:'https://github.com/tmair1012/Challenge-05-Work-Day-Scheduler',
             deployUrl:'https://tmair1012.github.io/Challenge-05-Work-Day-Scheduler/',
-            picture:''
+            picture:workDay
         },
+        /* Works in Progress 
         {
             title: 'Social Network API',
             description: 'App to show my knowledge of backend mongoose routes! (Walk-through video)',
@@ -45,33 +53,47 @@ function Project() {
             deployUrl:'https://www.youtube.com/watch?v=lyGdyTEYWTA&t=1s',
             picture:''
         }
+        */
     ];
     
     return(
-        <div className='proj-title-section'>
-           
-        <div className='proj-div'>
-        <h2>Projects</h2>
-            {myProjects.map((proj) => (
-        <div className='proj-section'>
-            <ul className='proj-ul'>
-            <li className='proj-list'>
-                <div>
-                <h2>{proj.title}</h2>
-    
-        <a href={proj.githubUrl} className='foot'>
-        <i className="fab fa-github fa-1x"></i> </a>
+        <div className='projects'>
+            <h2>My Projects</h2>
+        <div className='tipsy'>
+        <img src={tipsy}></img>
+        <div className='overLay'>
+        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <i className="fas fa-laptop"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <i className="fab fa-github fa-1x"></i>
+        </a>
+        </div>
+        </div>
+        <div className='tipsy'>
+        <img src={workDay}></img>
+        <div className='overLay'>
+        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <i className="fas fa-laptop"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <i className="fab fa-github fa-1x"></i>
+        </a>
+        </div>
+        </div>
+        <div className='tipsy'>
+        <img src={rhythm}></img>
+        <div className='overLay'>
+        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <i className="fas fa-laptop"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <i className="fab fa-github fa-1x"></i>
+        </a>
+        </div>
+        </div>
+        </div>
 
-        <a href={proj.deployUrl} className='foot'>
-        <i className="fas fa-laptop"></i> </a>
-         <p>{proj.description}</p>
-        </div>
-            </li>
-            </ul>    
-        </div>
-        ))}
-        </div>
-        </div>
     )
 }
 
