@@ -62,10 +62,10 @@ function Project() {
         <div className='tipsy'>
         <img src={tipsy}></img>
         <div className='overLay'>
-        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <a href="https://gracielamorales.github.io/LetsGetTipsy/" className='hey2'>
         <i className="fas fa-laptop"></i>
         </a>
-        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <a href="https://github.com/gracielamorales/LetsGetTipsy" className='hey'>
         <i className="fab fa-github fa-1x"></i>
         </a>
         </div>
@@ -73,10 +73,10 @@ function Project() {
         <div className='tipsy'>
         <img src={workDay}></img>
         <div className='overLay'>
-        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <a href="https://tmair1012.github.io/Challenge-05-Work-Day-Scheduler/" className='hey2'>
         <i className="fas fa-laptop"></i>
         </a>
-        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <a href="https://github.com/tmair1012/Challenge-05-Work-Day-Scheduler" className='hey'>
         <i className="fab fa-github fa-1x"></i>
         </a>
         </div>
@@ -84,10 +84,10 @@ function Project() {
         <div className='tipsy'>
         <img src={rhythm}></img>
         <div className='overLay'>
-        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <a href="https://daily-rhythm.herokuapp.com/" className='hey2'>
         <i className="fas fa-laptop"></i>
         </a>
-        <a href="https://www.linkedin.com/in/tyler-mair-986746165/" className='hey'>
+        <a href="https://github.com/tmair1012/Daily_Rhythm" className='hey'>
         <i className="fab fa-github fa-1x"></i>
         </a>
         </div>
