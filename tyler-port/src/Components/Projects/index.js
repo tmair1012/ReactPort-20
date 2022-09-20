@@ -62,6 +62,7 @@ function Project() {
         <div className='tipsy'>
         <img src={tipsy}></img>
         <div className='overLay'>
+        <h2 className='tipsy-title'>Let's Get Tipsy</h2>
         <a href="https://gracielamorales.github.io/LetsGetTipsy/" className='hey2'>
         <i className="fas fa-laptop"></i>
         </a>
@@ -73,6 +74,7 @@ function Project() {
         <div className='tipsy'>
         <img src={workDay}></img>
         <div className='overLay'>
+        <h2 className='work-title'>Work Scheduler</h2>
         <a href="https://tmair1012.github.io/Challenge-05-Work-Day-Scheduler/" className='hey2'>
         <i className="fas fa-laptop"></i>
         </a>
@@ -84,6 +86,7 @@ function Project() {
         <div className='tipsy'>
         <img src={rhythm}></img>
         <div className='overLay'>
+        <h2 className='daily-title'>Daily Rhythm</h2>
         <a href="https://daily-rhythm.herokuapp.com/" className='hey2'>
         <i className="fas fa-laptop"></i>
         </a>
