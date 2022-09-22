@@ -16,7 +16,7 @@ function Resume() {
       
       <a className="resumeDownload" href={myResume} download>
         {" "}
-        My Resume
+        Download My Resume
       </a>
 
     </div>
