@@ -1,8 +1,8 @@
 import React from "react";
 import DownloadLink from "react-download-link";
-import myResume from "../../assets/Profile/Tyler Mair Resume.pdf";
+import myResume from "../../assets/Profile/Tyler_Mair_Resume_Fixed.pdf";
 import resumeOne from "../../assets/Profile/Resume_3.png"
-import resumeTwo from "../../assets/Profile/Resume_4.png"
+import resumeTwo from "../../assets/Profile/Resume_5.jpg"
 
 function Resume() {
   return (
