@@ -27,9 +27,7 @@ function ContactMe() {
             <form className='contact-me-form' action="https://formsubmit.co/tyleramair@gmail.com" method="POST">
             <div className='contact-label'>
                 <h1>Contact Me</h1>
-                <p className='contact-description'>We here at Tyler's Portfolio are available to answer any questions you may have.
-                If I do not get back to you instantly through email, you can also try phone / text.
-                I look forward to connecting! (Please connect)
+                <p className='contact-description'>While I am actively looking for a Web-Dev position, I am also currently open to freelance work. I would be very grateful for any projects in which I could fine tune my skills.
                 </p>
             </div>
             <div className='name-div'>

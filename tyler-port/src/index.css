@@ -28,7 +28,7 @@ code {
 
 /* What Do */
 .port-head h2 {
-  font-family: 'Noto Serif Display';
+  font-family: 'Noto Sans Display';
   color: antiquewhite;
   margin-left: 30px;
 }
@@ -55,7 +55,7 @@ margin-left: 30px;
 .nav-item-list a {
   text-decoration: none;
   color:rgba(23, 17, 8, 0.677);
-  font-size:15px;
+  font-size:17px;
 }
 
 .nav-item-list a:after{
@@ -65,7 +65,7 @@ margin-left: 30px;
   height:0.1em;
   width:0%;
   background-color:rgb(0, 0, 0);
-  transition:all ease-in-out 150ms;
+  transition:all ease-in-out 125ms;
 }
 
 .nav-item-list a:hover::after{
@@ -86,10 +86,11 @@ width:30%;
 
 .bigMe{
   height: 500px;
-  width: 400px;
-  padding-top: 7rem;
+  width: 500px;
+  border-radius: 25%;
+  margin-top: 100px;
   margin-right:150px;
-  margin-top: 5px;
+  
 }
 
 /* FOOTER */
@@ -148,12 +149,12 @@ width:30%;
 .aboutMe {
   display:flex;
   color: rgba(9, 30, 31, 0.851);
-  font-family: 'Noto Serif Display';
+  font-family: 'Noto Sans Display';
   flex-direction: row;
 }
 /* H1 MY NAME */
 .about{
-  font-size:80px;
+  font-size:60px;
   line-height: 0%;
   margin-top:130px;
   margin-bottom: 0px;
@@ -424,13 +425,13 @@ opacity:1;
 
 .resumeDiv {
   color:antiquewhite;
-  font-family: 'Noto Serif Display';
+  font-family: 'Noto Sans Display';
   display:flex;
 }
 
 .resumeDownload{
   text-decoration: none;
-  color:rgb(241, 213, 176);
+  color:rgba(9, 30, 31, 0.851);
   margin-top:50px;
   top:100px;
   left:120px;
@@ -450,4 +451,39 @@ opacity:1;
   width: 700px;
   padding:20px;
   opacity: .8;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+ .header {width:100%;}
+ .meTitle {width:300px; padding:0;}
+.aboutMe {margin:0,0,0,0;}
+.about {width:200px; margin:0,0,0,0; padding:0,0,0,0;}
+.bigMe {width:250px; height:200px; margin:0,0,0,0; padding:0,0,}
+.nav {width:100%} 
+.nav-item-list {margin:0,0,0,0; padding: 0,0,0,0}
+.port-foot {width:100px}
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .aboutMe {width:100%}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .aboutMe {width:100%}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .aboutMe {width:100%}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

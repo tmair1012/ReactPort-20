@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from '../Modal';
-import moxiePhoto from "../../assets/Profile/Moxie-professional.jpeg";
+import profPhoto from "../../assets/Profile/closeUp.jpg";
 import socialPhoto from "../../assets/Profile/socialMePic.jpeg";
 import jobPhoto from "../../assets/Profile/jobPic.jpeg";
 import headPic from "../../assets/Profile/frontPagePic.jpg";
@@ -31,16 +31,16 @@ function About() {
           <br></br>
           I earned a Bachelors of Arts and Sciences from Illinois State University in 
           <br></br>
-          2018 and I am currently working as a Vice Principal for at a private day school. I have always loved what I do!
+          2018 and I am currently working as a Lead Teacher at a private day school for children with special needs.
           <br></br>
           <br></br>
-          Until I was punched in the face 14 times by a 12 year old.
+          
           </p>
        
         {/* <img src={headPic} alt="moxie" className="mePhoto" /> */}
       </div>
       <div className="pictureMain">
-        <img className ='bigMe' src={moxiePhoto}></img>
+        <img className ='bigMe' src={profPhoto}></img>
       </div>
 
       
