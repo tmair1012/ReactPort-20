@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import Modal from '../Modal';
 import profPhoto from "../../assets/Profile/close_up_fixed.jpg";
-import socialPhoto from "../../assets/Profile/socialMePic.jpeg";
-import jobPhoto from "../../assets/Profile/jobPic.jpeg";
-import headPic from "../../assets/Profile/frontPagePic.jpg";
 
 function About() {
   const videoGames = document.getElementsByClassName('.vidGames');
