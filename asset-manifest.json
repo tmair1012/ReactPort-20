@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ReactPort-20/static/css/main.c366d5cd.css",
+    "main.js": "/ReactPort-20/static/js/main.60b1da2f.js",
+    "static/media/Letsgettipsypic.png": "/ReactPort-20/static/media/Letsgettipsypic.b9f0dfa39b03544b3762.png",
+    "static/media/Tyler_Mair_Official_Resume_pic.jpg": "/ReactPort-20/static/media/Tyler_Mair_Official_Resume_pic.7f53a39a6aaa5b40607d.jpg",
+    "static/media/instagramLogo.jpg": "/ReactPort-20/static/media/instagramLogo.f6ae0ba2d59d79a3e08d.jpg",
+    "static/media/trees-med.jpeg": "/ReactPort-20/static/media/trees-med.0aaac99a66f19ca04ee2.jpeg",
+    "static/media/close_up_fixed.jpg": "/ReactPort-20/static/media/close_up_fixed.4a33fd3625d42f791178.jpg",
+    "static/media/WorkDayScheduler.png": "/ReactPort-20/static/media/WorkDayScheduler.2c035dff5c72ce18647a.png",
+    "static/media/DailyRhythmPic.png": "/ReactPort-20/static/media/DailyRhythmPic.5f1aed895b9bf96d676e.png",
+    "static/media/Tyler Mair Resume Official.pdf": "/ReactPort-20/static/media/Tyler Mair Resume Official.f30452960306cdb39e48.pdf",
+    "index.html": "/ReactPort-20/index.html",
+    "main.c366d5cd.css.map": "/ReactPort-20/static/css/main.c366d5cd.css.map",
+    "main.60b1da2f.js.map": "/ReactPort-20/static/js/main.60b1da2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c366d5cd.css",
+    "static/js/main.60b1da2f.js"
+  ]
+}
